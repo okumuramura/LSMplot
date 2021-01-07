@@ -106,13 +106,7 @@ if __name__ == "__main__":
     a, b, c = parabola_p
     ax2.text(0.05, 0.9, f"$y = {a:.5f}x^2 {b:+.5f}x {c:+.5f}$\n$\Delta = {fault(f_parabola, x, y)}$", transform = ax2.transAxes, verticalalignment='top', bbox = {"alpha" : 0.5})
 
-    print(f"y = {a:.5f}x^2 {b:+.5f}x {c:+.5f}")
-    print(fault(f_parabola, x, y))
-
     ax1.legend(loc = "lower right")
     ax2.legend(loc = "lower right")
-
-
-    # fig.savefig("example.png", dpi = 300)
 
     plt.show()
